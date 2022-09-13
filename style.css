@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: "Lato", sans-serif;
+}
+.sidenav .logo{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: 36px;
+}
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(151, 222, 248);
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+.sidenav a {
+text-decoration: none;
+font-size: 20px;
+color: #626161;
+transition: 0.3s;
+}
+.navItem{
+padding: 20px;
+}
+.navItem .row{
+height: 32px;
+padding: 8px;
+display: flex;
+/* border: 1.5px solid rgb(0, 0, 0); */
+align-items: center;
+}
+.sidenav .navItem .row .col a:hover {
+color: #000000;
+font-size: 29px;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+.navBack{
+height: 100vh;
+width: 60px;
+background-color: rgb(223, 172, 247);
+
+display: flex;
+margin: 0;
+padding: 0;
+position: fixed;
+flex-direction: column;
+}
+.navBack .menuButton{
+display: flex;
+justify-content: center;
+}
+.navBack .icon{
+display: flex;
+justify-content: center;
+}
+.navBack .icon ul li{
+list-style: none;
+}
+.navBack .icon ul{
+margin-left: -40px;
+}
+.navItem .row{
+background-color: rgba(213, 251, 251, 0.978);
+margin-top: 15px;
+border-radius: 5px;
+}
+.navItem .row .col img{
+width: 33px;
+}
+.navItem .footer {
+position: absolute;
+display: flex;
+bottom: 65px;
+}.navItem .footer .col{
+padding: 5px;
+border: 1.5px solid rgb(0, 0, 0);
+background-color: rgba(213, 251, 251, 0.978);
+margin-left: 3px;
+border-radius: 5px;
+}
+.navItem .footer a img{
+width: 30px;
+}
+.navBack .icon ul li img{
+width: 30px;
+cursor: pointer;
+margin-top: 10px;
+padding: 10px;
+}
+.main{
+margin-left: 60px;
+/* padding: 10px; */
+}
+.main .header{
+height: 100vh;
+} 
+.main .middle{
+height: 100vh;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+/* Body Part start Here */
+.main .container{
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    height: 50vh;
+    background-color: antiquewhite;
+}
+.main .container .row .col .image-div img{
+    width:420px;
+    height: 100%;
+}
+.main .container .row .col{
+    /* background-color: aquamarine; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main .container .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+h1{
+    margin:  0px; 
+}
